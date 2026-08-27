@@ -130,3 +130,9 @@ terraform {
   }
   */
 }
+
+module "s3-bucket-cz" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-cz/aws"
+  version = "1.0.0"
+  bucket_name = "tf-vault-qa-cz-20260826"
+  }
